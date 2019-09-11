@@ -1,0 +1,159 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="518.067" Width="682.357">
+    <Grid Background="Black">
+        <StackPanel Orientation="Vertical">
+            <Menu VerticalAlignment="Top">
+                <MenuItem HorizontalAlignment="Left" VerticalAlignment="Top" Header="_Fichier">
+                    <MenuItem Header="_Nouveau" InputGestureText="Ctrl+N"/>
+                    <MenuItem Header="_Ouvrir"  InputGestureText="Ctrl+O"/>
+                    <MenuItem Header="_Sauvegarder" InputGestureText="Ctrl+S"/>
+                    <Separator/>
+                    <MenuItem Header="_Quitter" InputGestureText="Ctrl+Q"/>
+                </MenuItem>
+                <MenuItem Header="_Edition">
+                    <MenuItem Header="_Changer de Police" InputGestureText="Ctrl+H"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel Orientation="Horizontal" Background="Black">
+                <Label Content=" Joueur :" Foreground="white"/>
+               <!-- <Label Width="186" Background="White"></Label>-->
+                <TextBox Width="186" Name="txtbox"></TextBox>
+                <Label Content=" Difficulté :" Foreground="White"/>
+                <RadioButton  Name="facile"></RadioButton>
+                <Label Content="Facile" Foreground="white"/>
+                <RadioButton  Name="Moyen"></RadioButton>
+                <Label Content="Moyen" Foreground="white"/>
+                <RadioButton  Name="Difficile"></RadioButton>
+                <Label Content="Difficile" Foreground="white"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Background="Black" Height="500" Margin="0,0,77,0">
+                <StackPanel HorizontalAlignment="Left" Height="418" Margin="0,10,0,0" VerticalAlignment="Top" Width="500">
+                    <Expander Header="Niveau 1" Background="Gray" FontSize="10">
+                        <Grid Width="400" Height="300" Background="Gray">
+                            <UniformGrid Columns="5" Rows="5" Grid.RowSpan="2">
+                                <Button Content="Entree" Foreground="black"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content="" Background="white"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content="" Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="white"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="white"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content="" Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content="Niveau Suivant"  Background="WhiteSmoke"/>
+
+                            </UniformGrid>
+                        </Grid>
+                    </Expander>
+
+                    <Expander Header="Niveau 2" Background="Gray" FontSize="10">
+                        <Grid Width="400" Height="300" Background="Gray">
+                            <UniformGrid Columns="5" Rows="5" Grid.RowSpan="2">
+                                <Button Content="Niveau Suivant" Foreground="black" Background="WhiteSmoke"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content="Entrée"  Background="WhiteSmoke"/>
+                                <Button Content="" Background="Chocolate"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content="" Background="Chocolate" Height="60" VerticalAlignment="Top"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="white"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="white"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content="" Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="WhiteSmoke"/>
+                            </UniformGrid>
+                        </Grid>
+                    </Expander>
+                    <Expander Header="Niveau 3" Background="Gray" FontSize="10">
+                        <Grid Width="400" Height="300" Background="Gray">
+                            <UniformGrid Columns="5" Rows="5" Grid.RowSpan="2">
+                                <Button Content="Buttin" Foreground="black" Background="WhiteSmoke"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content="Entrée"  Background="WhiteSmoke"/>
+                                <Button Content="" Background="white"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content="" Background="White"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="white"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content="" Background="Chocolate"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button Content=""  Background="White"/>
+                                <Button   Background="Chocolate"/>
+                            </UniformGrid>
+                        </Grid>
+                    </Expander>
+                    <Expander Header="Monstres" Background="Gray" FontSize="10">
+                        <Grid Height="110" Margin="0,0,-2,0" Background="WhiteSmoke">
+                            <StackPanel Orientation="Vertical">
+                                <Label Content=" Les monstres présents dans ce donjon sont :" Foreground="Black" FontSize="15" Padding="1"/>
+                                <Separator/>
+                                <Label Content="Le Goblin qui a 6pv et frappe de 1d4." Foreground="Black" FontSize="15" Padding="1" Width="504"/>
+                                <Label Content=" Le Grade Goblin qui a 8pv et frappe de 1d4." Foreground="Black" FontSize="15" Padding="1"/>
+                                <Label Content=" Le Roi des goblins qui a 20pv et frappe de 1d4." Foreground="Black" FontSize="15" Padding="1"/>
+                            </StackPanel>
+                        </Grid>
+                    </Expander>
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Background="Black" Margin="502,47,0,0">
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="White">C</TextBlock>
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="White">A</TextBlock>
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="white">R</TextBlock>
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="white"><Run Text="T"/></TextBlock>
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="white">E</TextBlock>
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="White">D</TextBlock>
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="White">$</TextBlock>
+            <TextBlock Padding="5" Height="45" HorizontalAlignment="Left" Width="30" FontSize="25" FontStyle="Italic" Foreground="White">D</TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Window>
